@@ -1,4 +1,4 @@
-package br.peerplay.domain.comment;
+package br.peerplay.domain.folder;
 
 import java.util.List;
 import java.util.UUID;
