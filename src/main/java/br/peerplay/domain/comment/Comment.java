@@ -1,6 +1,6 @@
 package br.peerplay.domain.comment;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
 
@@ -58,5 +58,5 @@ public class Comment {
     private String content;
 
     @Column(name = "created_at")
-    private Date createdAt;
+    private LocalDate createdAt;
 }
