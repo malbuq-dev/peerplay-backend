@@ -7,6 +7,7 @@ import java.util.UUID;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
+import br.peerplay.domain.reviewer_visitor.ReviewerVisitor;
 import br.peerplay.domain.user.User;
 import br.peerplay.domain.video.Video;
 import jakarta.persistence.Column;
@@ -37,6 +38,10 @@ public class Comment {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User comentator;
+
+    @ManyToOne
+    @JoinColumn(name = "visitor_id")
+    private ReviewerVisitor visitorComentator;
 
     @ManyToOne
     @JoinColumn(name = "video_id")
